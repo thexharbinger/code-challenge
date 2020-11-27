@@ -19,4 +19,8 @@ class CompanyTest < ActiveSupport::TestCase
     @company.update(zip_code: nil)
     assert_equal "City, State", @company.city_state
   end
+
+  test "should not update without brand color" do
+    refute @company.update(:brand_color => nil)
+  end
 end

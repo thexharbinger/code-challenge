@@ -5,6 +5,7 @@ class Company < ApplicationRecord
         format: { with: /.+@getmainstreet\.com\z/,
                   message: "The email must be of domain getmainstreet.com" },
         if: -> { email_changed? && email? }
+  validates :brand_color, presence: true
 
   before_save :update_city_state, if: :zip_code_changed?
 

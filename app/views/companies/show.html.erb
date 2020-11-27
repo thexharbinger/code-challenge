@@ -1,4 +1,5 @@
-<div class="container py-5">
+<div class="container py-5" data-controller="brand" data-brand-color="<%= @company.brand_color %>">
+  <style data-target="brand.style"></style>
   <h3>Company</h3>
   <div class="row">
     <div class="col">
@@ -9,8 +10,8 @@
       <%= link_to "Delete", company_path, data: { remote: true, method: :delete, confirm: "Are you sure?" } %>
     </div>
   </div>
-  <div class="bg-success">
-    <div class="container p-5 text-white">
+  <div class="bg-brand-color">
+    <div class="container p-5 text-brand-color">
       <h1><%= @company.name %></h1>
       <h3><mark><%= @company.city_state %></mark></h3>
     </div>
@@ -36,7 +37,7 @@
     </div>
   </div>
 
-  <div class="bg-success text-white text-center py-3">
+  <div class="bg-brand-color text-brand-color text-center py-3">
     <p class="lead"><%= @company.phone %> — <%= @company.email %></p>
   </div>
 </div>
