@@ -70,6 +70,12 @@ For all functionality extend or add tests from existing tests.
 
 _Assessing: Ability to produce clean tests and documentation for code._
 
+### **☐ Add Search filters and pagination in Companies index page**
+
+User should be able to filter companies based on different attributes of a Company. When list of companies grows, instead of listing all companies on page load, list only 10-20 and provide functionality for pagination.
+
+_Assessing: Backend skills. Ability to write active record queries. Abiltiy to leverage database indexing._
+
 ### **☐ Suggest a new task for this challenge**
 
 Write up a proposed challenge to add to this repository for assessing developers. Do not solve the code challenge. Just write the task, and why this would make a good challenge to include for future developers.
